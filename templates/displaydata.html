@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Anda</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='displaydata.css') }}">
+</head>
+<body>
+  <div class="display-biodata">
+    <h1>Data Anda</h1>
+    <p><strong>Nama Lengkap:</strong> {{ fullname }}</p>
+    <p><strong>Alamat:</strong> {{ address }}</p>
+    <p><strong>Nomor Telepon:</strong> {{ phone }}</p>
+    <a href="/biodata">Kembali</a>
+  </div>
+</body>
+</html>
